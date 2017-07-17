@@ -1,5 +1,7 @@
 <?php namespace Monolith\ComponentFramework;
 
+use Monolith\DependencyInjection\Container;
+
 class Components {
     public static function loadInto(Container $container, array $modules) {
         // First, bind all modules.
