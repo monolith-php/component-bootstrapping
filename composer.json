@@ -1,0 +1,29 @@
+{
+  "name": "monolith/component-framework",
+  "description": "Monolith: Component Framework",
+  "license": "MIT",
+  "keywords": [
+    "monolith",
+    "component framework"
+  ],
+  "homepage": "https://www.monolith-php.com",
+  "authors": [
+    {
+      "name": "Mitchell van Wijngaarden",
+      "email": "mitchell@kooding.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "monolith/dependency-injection": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Monolith\\ComponentFramework\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
