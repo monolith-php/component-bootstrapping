@@ -15,8 +15,8 @@ class Components {
         $this->registered = new Collection;
     }
 
-    public function register(ComponentBootstrap $bootstrap) {
-        $this->registered = $this->registered->add($bootstrap);
+    public function register(ComponentBootstrap ...$bootstrap) {
+        $this->registered = $this->registered->merge(new Collection($bootstrap));
     }
 
     public function load() {
