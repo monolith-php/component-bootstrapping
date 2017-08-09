@@ -1,10 +1,10 @@
 {
-  "name": "monolith/component-framework",
-  "description": "Monolith: Component Framework",
+  "name": "monolith/component-loading",
+  "description": "Monolith: Component Loading",
   "license": "MIT",
   "keywords": [
     "monolith",
-    "component framework"
+    "component loading"
   ],
   "homepage": "https://www.getmonolith.com",
   "authors": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Monolith\\ComponentFramework\\": "src/"
+      "Monolith\\ComponentLoading\\": "src/"
     }
   },
   "config": {

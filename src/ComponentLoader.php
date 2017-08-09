@@ -1,9 +1,9 @@
-<?php namespace Monolith\ComponentFramework;
+<?php namespace Monolith\ComponentLoading;
 
 use Monolith\Collections\Collection;
 use Monolith\DependencyInjection\Container;
 
-class Components {
+class ComponentLoader {
 
     /** @var Container */
     private $container;
@@ -19,7 +19,7 @@ class Components {
         $this->registered = $this->registered->merge(new Collection($bootstrap));
     }
 
-    public function load() {
+    public function load(): Container {
         // First, run the component bindings
         /** @var ComponentBootstrap $bootstrap */
         foreach ($this->registered as $bootstrap) {
@@ -31,5 +31,7 @@ class Components {
         foreach ($this->registered as $bootstrap) {
             $bootstrap->init($this->container);
         }
+
+        return $this->container;
     }
 }

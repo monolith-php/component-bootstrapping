@@ -1,4 +1,4 @@
-# Monolith: Component Framework
+# Monolith: Component Loading
 
 ### Installation
 
@@ -6,7 +6,7 @@ In composer.json
 ```json
 {
   "require": {
-    "monolith/component-framework": "dev-master"
+    "monolith/component-loading": "dev-master",
   },
   "repositories": [
     {

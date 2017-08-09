@@ -1,4 +1,4 @@
-<?php namespace Monolith\ComponentFramework;
+<?php namespace Monolith\ComponentLoading;
 
 use Monolith\DependencyInjection\Container;
 
