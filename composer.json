@@ -1,26 +1,24 @@
 {
   "name": "monolith/component-loading",
-  "description": "Monolith: Component Loading",
-  "license": "MIT",
+  "description": "Module for loading components in the Monolith framework.",
   "keywords": [
     "monolith",
     "component loading"
   ],
-  "homepage": "https://www.getmonolith.com",
   "authors": [
-    {
-      "name": "Mitchell van Wijngaarden",
-      "email": "mitchell@kooding.nl"
-    },
     {
       "name": "Shawn McCool",
       "email": "shawn@heybigname.com"
+    },
+    {
+      "name": "Mitchell van Wijngaarden",
+      "email": "mitchell@kooding.nl"
     }
   ],
   "require": {
     "php": "^7.1",
-    "monolith/dependency-injection": "dev-master",
-    "monolith/collections": "dev-master"
+    "monolith/dependency-injection": "^1.0",
+    "monolith/collections": "^1.0"
   },
   "autoload": {
     "psr-4": {
