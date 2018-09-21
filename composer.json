@@ -1,9 +1,9 @@
 {
-  "name": "monolith/component-loading",
-  "description": "Module for loading components in the Monolith framework.",
+  "name": "monolith/component-bootstrapping",
+  "description": "Module for bootstrapping components in the Monolith framework.",
   "keywords": [
     "monolith",
-    "component loading"
+    "component bootstrapping"
   ],
   "authors": [
     {
@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Monolith\\ComponentLoading\\": "src/"
+      "Monolith\\ComponentBootstrapping\\": "src/"
     }
   },
   "config": {
