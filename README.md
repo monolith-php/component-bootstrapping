@@ -1,3 +1,3 @@
-# Component Bootstrapping
+# Component Bootstrapping $$VERSION$$
 
 information
