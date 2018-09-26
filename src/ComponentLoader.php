@@ -32,7 +32,7 @@ final class ComponentLoader {
         return $this->container;
     }
 
-    private function bindComponents($components): ComponentBootstrap {
+    private function bindComponents($components): void {
 
         /** @var ComponentBootstrap $component */
         foreach ($components as $component) {
