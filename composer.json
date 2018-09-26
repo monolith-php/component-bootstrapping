@@ -17,8 +17,8 @@
   ],
   "require": {
     "php": "^7.1",
-    "monolith/dependency-injection": "^1.0",
-    "monolith/collections": "^1.0"
+    "monolith/dependency-injection": "^4",
+    "monolith/collections": "^2"
   },
   "autoload": {
     "psr-4": {
