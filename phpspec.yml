@@ -1,0 +1,6 @@
+suites:
+  main:
+    namespace: "Monolith\\ComponentBootstrapping"
+    psr4_prefix: "Monolith\\ComponentBootstrapping"
+    src_path: src
+formatter.name: pretty
