@@ -2,7 +2,8 @@
 
 use Monolith\DependencyInjection\Container;
 
-interface ComponentBootstrap {
+interface ComponentBootstrap
+{
     public function bind(Container $container): void;
     public function init(Container $container): void;
 }

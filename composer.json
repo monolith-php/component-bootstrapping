@@ -13,16 +13,28 @@
   ],
   "require": {
     "php": "^7.1",
-    "monolith/dependency-injection": ">=4",
-    "monolith/collections": ">=2"
+    "monolith/dependency-injection": "^5",
+    "monolith/collections": "^3"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "^5.0"
   },
   "autoload": {
     "psr-4": {
       "Monolith\\ComponentBootstrapping\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\Monolith\\ComponentBootstrapping\\": "spec/"
+    },
+    "files": [
+      "spec/functions.php"
+    ]
+  },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "bin-dir": "bin"
   },
   "minimum-stability": "dev"
 }
