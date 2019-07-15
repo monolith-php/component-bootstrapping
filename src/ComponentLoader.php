@@ -40,7 +40,7 @@ final class ComponentLoader
             try {
                 $component->bind($this->container);
             } catch (Throwable $e) {
-                throw CanNotLoadComponent::receivedExceptionLoadingComponentBootstrap(get_class($component), $e);
+                throw CanNotLoadComponent::receivedErrorLoadingComponentBootstrap(get_class($component), $e);
             }
         }
     }
@@ -52,7 +52,7 @@ final class ComponentLoader
             try {
                 $component->init($this->container);
             } catch (Throwable $e) {
-                throw CanNotLoadComponent::receivedExceptionLoadingComponentBootstrap(get_class($component), $e);
+                throw CanNotLoadComponent::receivedErrorLoadingComponentBootstrap(get_class($component), $e);
             }
         }
     }
