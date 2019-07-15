@@ -2,6 +2,7 @@
 
 use Monolith\Collections\Collection;
 use Monolith\DependencyInjection\Container;
+use Throwable;
 
 final class ComponentLoader
 {
@@ -36,7 +37,11 @@ final class ComponentLoader
     {
         /** @var ComponentBootstrap $component */
         foreach ($components as $component) {
-            $component->bind($this->container);
+            try {
+                $component->bind($this->container);
+            } catch (Throwable $e) {
+                throw CanNotLoadComponent::receivedExceptionLoadingComponentBootstrap(get_class($component), $e);
+            }
         }
     }
 
@@ -44,7 +49,11 @@ final class ComponentLoader
     {
         /** @var ComponentBootstrap $bootstrap */
         foreach ($components as $component) {
-            $component->init($this->container);
+            try {
+                $component->init($this->container);
+            } catch (Throwable $e) {
+                throw CanNotLoadComponent::receivedExceptionLoadingComponentBootstrap(get_class($component), $e);
+            }
         }
     }
 }
