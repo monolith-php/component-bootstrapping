@@ -12,12 +12,12 @@
     }
   ],
   "require": {
-    "php": "^7.2",
-    "monolith/dependency-injection": "^7",
-    "monolith/collections": "^6"
+    "php": "^7.4",
+    "monolith/dependency-injection": "^8",
+    "monolith/collections": "^8"
   },
   "require-dev": {
-    "phpspec/phpspec": "^5.0"
+    "phpspec/phpspec": "dev-master"
   },
   "autoload": {
     "psr-4": {
